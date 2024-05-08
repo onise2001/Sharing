@@ -1,0 +1,12 @@
+{% extends 'text/index.html' %}
+
+{% block body%}
+    <h1>Add Text</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p}}
+        <input type="submit" value="Add">
+    </form>
+    
+{% endblock %}
